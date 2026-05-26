@@ -1,0 +1,40 @@
+# ─────────────────────────────────────────────
+# Prescription AI — Requirements
+# Install with: pip install -r requirements.txt
+# ─────────────────────────────────────────────
+
+# Core deep learning
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.35.0        # TrOCR lives here
+datasets>=2.14.0            # HuggingFace datasets
+
+# OCR & image processing
+easyocr>=1.7.0              # Full prescription text detection
+opencv-python>=4.8.0        # Image preprocessing
+Pillow>=10.0.0              # Image loading/saving
+albumentations>=1.3.0       # Data augmentation
+
+# NLP & NER
+scispacy>=0.5.3             # Biomedical NER
+spacy>=3.6.0
+
+# Data handling
+pandas>=2.0.0
+numpy>=1.24.0
+scikit-learn>=1.3.0         # Train/val/test split + metrics
+matplotlib>=3.7.0           # Plots for the report
+seaborn>=0.12.0
+
+# API & web
+requests>=2.31.0            # OpenFDA API calls
+python-dotenv>=1.0.0        # For storing API keys safely
+
+# App
+streamlit>=1.28.0           # Final UI
+
+# Kaggle dataset download
+kaggle>=1.5.16
+
+# Evaluation
+jiwer>=3.0.0                # WER (Word Error Rate) calculation
